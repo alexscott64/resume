@@ -1,0 +1,227 @@
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+\usepackage{fontawesome}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{color}
+%\usepackage{comment}
+\usepackage{microtype}
+\usepackage{vwcol}  
+\usepackage[dvipsnames]{xcolor}
+\usepackage{dashrule}
+\usepackage{enumitem}
+\setitemize{noitemsep,topsep=1pt,parsep=1pt,partopsep=0pt}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+%\newcommand{\tikzcircle}[2][gray,fill=gray]{\tikz[baseline=-0.4ex]\draw[#1,radius=#2] (0,0) circle ;}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+%\setlength{\columnseprule}{.2pt}
+\def\columnseprulecolor{\color{gray}}
+
+
+%\begin{center}
+%\namesection {Alex}{Scott}
+%\hdashrule[0ex]{6cm}{.8pt}{1pt}
+ 
+
+%\mbox{
+
+%{\color{RoyalBlue}\faGlobe} \, \color{black}\href{https://alexscott.io}{alexscott.io} \quad 
+%
+%
+%{\color{RoyalBlue}\faLinkedin} \, \href{http://linkedin.com/in/alexscott64}{alexscott64} \quad 
+%
+%%\tikzcircle{2pt} \,
+%
+%{\color{RoyalBlue}\faGithub} \, \href{http://github.com/alexscott64}{alexscott64} \quad 
+%
+%
+%{\color{RoyalBlue}\faEnvelopeO} \, \href{mailto:agscott1@uci.edu}{agscott1@uci.edu} \quad 
+%
+%%\tikzcircle{2pt} \, 
+%
+%{\color{RoyalBlue}\faPhone} \, 858.353.2243
+%}
+
+%\end{center}
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+%\colorbox{Periwinkle}{
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+
+%
+%\namesection {Alex}{Scott}
+\newName{Alex}{Scott}
+
+%%------------------------------------------------
+%% Contact Info
+%%------------------------------------------------
+%\section{}
+\vspace{3mm}
+{\color{RoyalBlue} \Large \faGlobe} \, \color{black}\href{https://alexscott.io}{alexscott.io} 
+\vspace{1mm}
+
+{\color{RoyalBlue} \Large \faLinkedin} \, \href{http://linkedin.com/in/alexscott64}{alexscott64} 
+\vspace{1mm}
+%\tikzcircle{2pt} \,
+
+{\color{RoyalBlue} \Large \faGithub} \, \href{http://github.com/alexscott64}{alexscott64} 
+\vspace{1mm}
+
+{\color{RoyalBlue} \Large \faEnvelopeO} \, \href{mailto:agscott1@uci.edu}{agscott1@uci.edu} 
+\vspace{1mm}
+%\tikzcircle{2pt} \, 
+
+{\color{RoyalBlue} \Large \faPhone} \, 858.353.2243
+\vspace{1mm}
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education} 
+
+%\noindent
+%{\color{CadetBlue} \rule{\linewidth}{0.5mm} }
+
+%\subsection{University of California, Irvine}
+\runsubsection{UC Irvine}
+\vspace{1mm}
+
+%\runsubsection{\normalsize School of Information \& Computer Sciences}
+
+2014 -- 2016
+\vspace{1mm}
+
+\descript{B.S. Computer Science}
+\vspace{1mm}
+
+Specialization:  Information
+
+
+
+\vspace{2mm}
+
+
+%------------------------------------------------
+% Coursework + Skills
+%------------------------------------------------
+\section{Languages + Skills}
+
+\runsubsection{Languages}
+%\descript{\\PHP \tikz\draw[black,fill=blue] (0,0) circle (.5ex);\tikz\draw[black,fill=gray] (0,0) circle (.5ex);\tikz\draw[black,fill=gray] (0,0) circle (.5ex);\\Java \\Python \\JavaScript \\C++ \\C \\Matlab }
+\descript{\\PHP \\Java \\Python \\JavaScript \\C++ \\C \\Matlab }
+
+\vspace{2mm}
+
+\runsubsection{\normalsize {Databases}}
+
+\descript{MySQL \\MongoDB \\PostgreSQL \\Redis }
+
+\vspace{2mm}
+
+\runsubsection{\normalsize {Libraries / Frameworks}}
+
+\descript{Node.js\\ React\\ SASS\\ Laravel }
+
+\vspace{2mm}
+
+\runsubsection{\normalsize {Additional Skills}}
+
+\descript{HTML\\ CSS\\ AWS\\ Git \\ \LaTeX\\ Jenkins }
+
+
+
+
+\end{minipage} % The end of the left column
+%\hfil
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+%}
+\begin{minipage}[t]{0.65\textwidth} % The right column takes up 66% of the text width of the page
+
+\vspace{-10mm}
+
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+\section{Experience}
+
+\runsubsection{\normalsize LeaseCalcs}
+\location{ July 2016 - Present }
+\descript{Senior Software Engineer}
+
+\begin{itemize}[leftmargin=.5cm]
+\item Developed and documented an extensible REST API that allowed clients to easily query data points, import data structures into the application using simple facades, export financial data such as journal entries and rent payments to feed into Oracle, SAP, and other ERP systems, and build out business intelligence dashboards relating to all forms of corporate real estate data and calculations.
+\item Optimized major components within the application by more than 500\% by refactoring application logic, improving database queries, and setting up a caching interface in PHP that let other developers easily cache structures, calculations and more in Redis with a secondary caching layer in MongoDB.
+\item Modernized infrastructure with AWS, set up unit and regression testing with Jenkins and PHPUnit, and created deployment pipelines to speed up application development and deployment.
+\item Migrated client's legacy data from various databases and files, into a generalized format that could be loaded into LeaseCalcs's application, allowing clients with large lease portfolios to quickly and easily start using the system for financial accounting.
+\end{itemize}
+
+\runsubsection{\normalsize NASA JPL \& UC Irvine}
+\location{ October 2014 - November 2016 }
+\descript{Programmer}
+
+\begin{itemize}[leftmargin=.5cm]
+\item Developed a binary file format named ARCH that stored matrices, vectors, and scalars, as well as the sizes and
+names of each data type.
+\item Created interfaces in MATLAB, Python, JavaScript, and C++ that enabled scientists to write and read formatted
+data to and from ARCH files.
+\item Profiled the Ice Sheet System Model (ISSM) using XCode Instruments to determine the most time-consuming operations that could be optimized and improved upon and optimized the most time-consuming operations in C++.
+\end{itemize}
+
+
+
+%------------------------------------------------
+% Projects
+%------------------------------------------------
+\section{Projects}
+
+\runsubsection{IMDB Replica}
+\descript{{\normalfont |\hspace{.19cm}}Java}
+
+
+\begin{itemize}[leftmargin=.5cm]
+\item Used Java to implement a data access object pattern that connected to a MySQL database and served
+information to JSP pages using servlets.
+\item Implemented auto-complete search functionality with AJAX, jQuery, and MySQL.
+
+\end{itemize}
+
+\runsubsection{Productivity Raspberry Pi Bot}
+\descript{{\normalfont |\hspace{.19cm}}Python}
+
+
+\begin{itemize}[leftmargin=.5cm]
+\item 
+Programmed a motorized RC car using a Raspberry Pi equipped with motion sensing capabilities, with the purpose of driving away when one reaches for their phone placed atop it.
+\item
+Built out and connected most circuitry, motors, and batteries using a breadboard, and programmed the motion control sensor using Python.
+\end{itemize}
+
+\runsubsection{ZotRank}
+\descript{{\normalfont |\hspace{.19cm}}React / Node.js}
+
+
+\begin{itemize}[leftmargin=.5cm]
+\item 
+Worked with a team to build a UCI-oriented rate my professor, with custom filters, tags, and other information that applied to both teachers, and specific classes.
+\item
+Used React to render specific components about class ratings, teacher ratings, and student comments, all fetched from MongoDB using Node.js.
+\end{itemize}
+
+
+\end{minipage} % The end of the right column
+\end{document}
