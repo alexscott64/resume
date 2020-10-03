@@ -1,4 +1,4 @@
-\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+\documentclass[letterpaper]{styles} % Use US Letter paper, change to a4paper for A4 
 \usepackage{fontawesome}
 \usepackage{tikz}
 \usepackage{xcolor}
@@ -18,47 +18,14 @@
 
 %\newcommand{\tikzcircle}[2][gray,fill=gray]{\tikz[baseline=-0.4ex]\draw[#1,radius=#2] (0,0) circle ;}
 
-%----------------------------------------------------------------------------------------
-%	TITLE SECTION
-%----------------------------------------------------------------------------------------
 %\setlength{\columnseprule}{.2pt}
 \def\columnseprulecolor{\color{gray}}
 
-
-%\begin{center}
-%\namesection {Alex}{Scott}
-%\hdashrule[0ex]{6cm}{.8pt}{1pt}
- 
-
-%\mbox{
-
-%{\color{RoyalBlue}\faGlobe} \, \color{black}\href{https://alexscott.io}{alexscott.io} \quad 
-%
-%
-%{\color{RoyalBlue}\faLinkedin} \, \href{http://linkedin.com/in/alexscott64}{alexscott64} \quad 
-%
-%%\tikzcircle{2pt} \,
-%
-%{\color{RoyalBlue}\faGithub} \, \href{http://github.com/alexscott64}{alexscott64} \quad 
-%
-%
-%{\color{RoyalBlue}\faEnvelopeO} \, \href{mailto:agscott1@uci.edu}{agscott1@uci.edu} \quad 
-%
-%%\tikzcircle{2pt} \, 
-%
-%{\color{RoyalBlue}\faPhone} \, 858.353.2243
-%}
-
-%\end{center}
 %----------------------------------------------------------------------------------------
 %	LEFT COLUMN
 %----------------------------------------------------------------------------------------
-%\colorbox{Periwinkle}{
 \begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
 
-
-%
-%\namesection {Alex}{Scott}
 \newName{Alex}{Scott}
 
 %%------------------------------------------------
@@ -106,19 +73,58 @@
 
 Specialization:  Information
 
-
-
 \vspace{2mm}
 
 
 %------------------------------------------------
-% Coursework + Skills
+% Languages + Skills
 %------------------------------------------------
 \section{Languages + Skills}
 
 \runsubsection{Languages}
-%\descript{\\PHP \tikz\draw[black,fill=blue] (0,0) circle (.5ex);\tikz\draw[black,fill=gray] (0,0) circle (.5ex);\tikz\draw[black,fill=gray] (0,0) circle (.5ex);\\Java \\Python \\JavaScript \\C++ \\C \\Matlab }
-\descript{\\PHP \\Java \\Python \\JavaScript \\C++ \\C \\Matlab }
+\descript{\\PHP 
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\\Java 
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\\Python 
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=white] (0,0) circle (.5ex);
+\tikz\draw[black,fill=white] (0,0) circle (.5ex);
+\\JavaScript 
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\\C++ 
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=white] (0,0) circle (.5ex);
+\\C 
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=white] (0,0) circle (.5ex);
+\tikz\draw[black,fill=white] (0,0) circle (.5ex);
+\\Matlab 
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=teal] (0,0) circle (.5ex);
+\tikz\draw[black,fill=white] (0,0) circle (.5ex);
+\tikz\draw[black,fill=white] (0,0) circle (.5ex);
+}
 
 \vspace{2mm}
 
@@ -130,7 +136,7 @@ Specialization:  Information
 
 \runsubsection{\normalsize {Libraries / Frameworks}}
 
-\descript{Node.js\\ React\\ SASS\\ Laravel }
+\descript{Node.js\\ React.js \\ SASS\\ Laravel }
 
 \vspace{2mm}
 
@@ -139,16 +145,10 @@ Specialization:  Information
 \descript{HTML\\ CSS\\ AWS\\ Git \\ \LaTeX\\ Jenkins }
 
 
-
-
 \end{minipage} % The end of the left column
-%\hfil
-%
 %----------------------------------------------------------------------------------------
 %	RIGHT COLUMN
 %----------------------------------------------------------------------------------------
-%
-%}
 \begin{minipage}[t]{0.65\textwidth} % The right column takes up 66% of the text width of the page
 
 \vspace{-10mm}
@@ -181,7 +181,6 @@ names of each data type.
 data to and from ARCH files.
 \item Profiled the Ice Sheet System Model (ISSM) using XCode Instruments to determine the most time-consuming operations that could be optimized and improved upon and optimized the most time-consuming operations in C++.
 \end{itemize}
-
 
 
 %------------------------------------------------
